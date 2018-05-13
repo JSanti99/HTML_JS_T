@@ -14,3 +14,13 @@ function fibo() {
   r.innerHTML="";
   r.appendChild(h3);
 }
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("demo").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "pruebaPHP.php", true);
+  xhttp.send();
+}
