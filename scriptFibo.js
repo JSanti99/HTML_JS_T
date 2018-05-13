@@ -1,6 +1,4 @@
-function fibo() {
-  var n=parseInt(document.getElementById('n').value);
-  var r=document.getElementById("result");
+function fibo(n,r) {
   var h3=document.createElement("h3");
   var x=0,y=1,z=1;
   for (var i = 1; i < n; i++) {
